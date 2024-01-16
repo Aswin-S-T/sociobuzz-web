@@ -6,11 +6,10 @@
   font-family: 'Rubik', sans-serif;;
 }
 body{
-  background-color: aliceblue;
+  background-color: whitesmoke;
 }
 .box{
   background-color: white;
-  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -29,6 +28,7 @@ body{
 h4.profile-name{
   color: #191546;  
   font-size: 20px;
+  font-weight: bold;
 }
 .account-info p{
   color: gray;
@@ -48,4 +48,81 @@ h4.profile-name{
 .follow-details h5{
   font-weight: bold;
   color: #191546;
+}
+.card{
+  background-color: white;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  border: none;
+}
+.post-image{
+  max-height: 500px;
+  min-height: 400px;
+}
+.post-header{
+  display: flex;
+  justify-content: space-between;
+}
+img.avatar{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.post-title{
+  font-size: 20px;
+  color: #222;
+}
+.post-header p{
+  color: grey;
+}
+.post-actions{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+button.add-post-btn{
+  float: right;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #1AE79F;
+  color: white;
+}
+::-webkit-scrollbar{
+  width: 0;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+.user {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.user img {
+  width: 100px;
+  height: 120px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 2px solid #ff8c00; 
+}
+
+.user span {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #333;
+}
+
+.story:hover .user img {
+  border: 2px solid #4caf50; /* Change this color for hover effect */
 }
